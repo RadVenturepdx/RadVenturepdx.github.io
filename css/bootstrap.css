@@ -2420,6 +2420,7 @@ input[type="search"] {
   }
 }
 .form-group {
+  padding: 10px;
   margin-bottom: 15px;
 }
 .radio,
