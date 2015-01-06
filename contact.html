@@ -184,7 +184,7 @@
         <!-- /.row -->
 
         <!-- Contact Form -->
-        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file.
         <div class="row">
             <div class="col-md-8">
                 <h3>Send us a Message</h3>
@@ -209,13 +209,46 @@
                         </div>
                     </div>
                     <div id="success"></div>
-                    <!-- For success/fail messages -->
+                    <!-- For success/fail messages
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
 
-        </div>
+        </div>-->
         <!-- /.row -->
+        <div id="contacts">
+            <div class="row"><!-- Alignment -->
+                <div class="col-sm-offset-3 col-sm-6">
+                    <!-- Form itself -->
+                    <form class="well" id="contactForm" name="sentMessage" novalidate="">Contact me
+                        <!-- Full Name -->
+                        <div class="control-group">
+                            <div class="controls">
+                                <input class="form-control" id="name" type="text" placeholder="Full Name" required="" data-validation-required-message="Please enter your name" />
+
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="control-group">
+                            <div class="controls">
+                                <input class="form-control" id="email" type="email" placeholder="Email" required="" data-validation-required-message="Please enter your email" /></div>
+                        </div>
+                        <!--Message -->
+                        <div class="control-group">
+                            <div class="controls"></div>
+                        </div>
+                        <div id="success"></div>
+                        <!-- For success/fail messages -->
+                        <button class="btn btn-primary pull-right" type="submit">Send</button>
+
+                    </form></div>
+            </div>
+        </div>
+
+     <!-- JS FILES -->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/jqBootstrapValidation.js"></script><script type="text/javascript" src="./js/contact_me.js"></script>
 
         <hr>
 
