@@ -1222,6 +1222,11 @@ ol {
   margin-top: 0;
   margin-bottom: 10px;
 }
+footer{
+  color: #777777;
+  text-align: left;
+
+}
 ul ul,
 ol ul,
 ul ol,
@@ -2055,6 +2060,10 @@ pre code {
 }
 table {
   background-color: transparent;
+}
+a{
+  color: #777777;
+  text-align: left;
 }
 caption {
   padding-top: 8px;
