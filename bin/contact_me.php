@@ -16,8 +16,8 @@ $message = $_POST['message'];
 // create email body and send it	
 $to = 'ankgupta@pdx.edu'; // PUT YOUR EMAIL ADDRESS HERE
 $email_subject = "Question about Radventure:  $name"; // EDIT THE EMAIL SUBJECT LINE HERE
-$email_body = "You have received a new message from your website's contact form.\n\n"."Here are the details:\n\nName: $name\n\nPhone: $phone\n\nEmail: $email_address\n\nMessage:\n$message";
-$headers = "From: noreply@your-domain.com\n";
+$email_body = "You have received a new message from your website's contact form.\n\n"."Here are the details:\n\nName: $name\n\n Email: $email_address\n\nMessage:\n$message";
+$headers = "From: radventureit@gmail.com\n";
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
 return true;			
