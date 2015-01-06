@@ -1,7 +1,6 @@
 <?php
 // check if fields passed are empty
 if(empty($_POST['name'])  		||
-   empty($_POST['phone']) 		||
    empty($_POST['email']) 		||
    empty($_POST['message'])	||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
@@ -11,7 +10,6 @@ if(empty($_POST['name'])  		||
    }
 	
 $name = $_POST['name'];
-$phone = $_POST['phone'];
 $email_address = $_POST['email'];
 $message = $_POST['message'];
 	
