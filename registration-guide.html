@@ -139,7 +139,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Guide Registration</h1>
+                <h1 class="page-header" style="text-align:center">Guide Registration</h1>
             </div>
         </div>
         <!-- /.row -->
@@ -268,7 +268,7 @@
                         </div>
 
                         <br>
-                        <legend>Profile Information</legend>
+                        <legend>Guide Information</legend>
                         <div class="control-group">
                             <div class="controls">
                                     <textarea rows="10" cols="100" class="form-control"
@@ -280,6 +280,47 @@
                             <p class="help-block"></p>
                         </div>
 
+                        <div class="control-group">
+                            <div class="controls">
+                                <div class="input-group">
+                                    <div class="input-group-addon">$</div>
+                                        <input type="text" class="form-control" placeholder="Rate"
+                                           id="rate" required
+                                           data-validation-required-message="Please enter your rate" />
+                                    <div class="input-group-addon">.00</div>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <legend>Availability</legend>
+                        <label class="checkbox" style="padding-left:20px">
+                            <input type="checkbox" id="Monday" value="option1"> Monday
+                        </label>
+                        <label class="checkbox" style="padding-left:20px">
+                            <input type="checkbox" id="Tuesday" value="option2"> Tuesday
+                        </label>
+                        <label class="checkbox" style="padding-left:20px">
+                            <input type="checkbox" id="Wednesday" value="option3"> Wednesday
+                        </label>
+                        <label class="checkbox" style="padding-left:20px">
+                            <input type="checkbox" id="Thursday" value="option4"> Thursday
+                        </label>
+                        <label class="checkbox" style="padding-left:20px">
+                            <input type="checkbox" id="Friday" value="option5"> Friday
+                        </label>
+                        <label class="checkbox" style="padding-left:20px">
+                            <input type="checkbox" id="Saturday" value="option6"> Saturday
+                        </label>
+                        <label class="checkbox" style="padding-left:20px">
+                            <input type="checkbox" id="Sunday" value="option7"> Sunday
+                        </label>
+
+
+
+
+                        <br><br>
                         <div class="control">
                             By clicking <strong class="label label-primary">Register</strong>, you agree to the
                             <a href="">Terms and Conditions</a>
