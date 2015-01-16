@@ -216,11 +216,15 @@
                         <p class="help-block">Your personal information will not be shared with anyone. It will only be used for payment information and personal security</p>
                         <!--schema address ... street number??? -->
                         <br>
-                        <div class="control-group">
-                            <div class="controls">
-                                <input type="phone" class="form-control" placeholder="Phone Number"
-                                       id="phone" required maxlength="10"
-                                       data-validation-minlength-message="Please enter your phone number"/>
+                        <div class="row">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <p class="col-sm-3 help-block control-label">Phone Number</p>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd">
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -395,6 +399,7 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jqBootstrapValidation.js"></script>
     <script src="./js/contact_me.js"></script>
+    <script src="./js/bootstrap-formhelpers-phone.js"></script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
