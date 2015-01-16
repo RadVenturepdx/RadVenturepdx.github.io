@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Radventure</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,99 +23,122 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li class="active">
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">RADVENTURE</a>
         </div>
-        <!-- /.container -->
-    </nav>
+
+        <div class="collapse navbar-collapse nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="">Mt. Hood</a>
+                        </li>
+                        <li>
+                            <a href="">Mt. Bachelor</a>
+                        </li>
+                        <li>
+                            <a href="">Mt. Whistler</a>
+                        </li>
+                        <li>
+                            <a href="">Tap</a>
+                        </li>
+                        <li>
+                            <a href="">Dat</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="search.html">Quick Search</a>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-md navbar-btn" data-toggle="modal" data-target="#signIn" style="margin-left:15px">
+                        Sign In
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-md navbar-btn" data-toggle="modal" data-target="#signUp" style="margin-left:15px">
+                        Sign Up
+                    </button>
+                </li>
+                <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:99999999999">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="signInModal">Sign In</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="Username">Username/Email</label>
+                                        <input type="email" class="form-control" id="Username" placeholder="radventureit@gmail.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Password">Password</label>
+                                        <input type="password" class="form-control" id="Password" placeholder="Password">
+                                    </div>
+                                    <button type="reset" class="btn btn-default">Reset</button>
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:99999999999">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="signUpModal">Sign Up</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div>
+                                        <a class="btn btn-default" href="registration-user.html" >As a User</a>&nbsp &nbsp If you would like to start finding guides.
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <a class="btn btn-default" href="registration-guide.html">As a Guide</a>&nbsp &nbsp If you want to start guiding people.
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </li> -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 
     <!-- Page Content -->
     <div class="container">
@@ -123,14 +146,8 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">FAQ
-                    <small>Subheading</small>
+                <h1 class="page-header" style="text-align:center">FAQ
                 </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li class="active">FAQ</li>
-                </ol>
             </div>
         </div>
         <!-- /.row -->
@@ -142,12 +159,12 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How does it work?</a>
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                Radventure allows travellers to choose their guides based on where they are visiting. Guide profiles help travellers find the right fit. Once a selection is made the guide and visitor agree on dates, times, and the adventure. The trip is booked, paid for, then the Radventure happens.
                             </div>
                         </div>
                     </div>
@@ -155,25 +172,24 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus?</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">What does it cost?</a>
                             </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
+                                Radventure pricing is set by the guide and agreed upon by both the client and the guide before the trip is booked and payment happens. Rates are typicaly hourly and can range depending on the season or day of week. Radventure takes a small percentage of the transaction.                             </div>
                         </div>
                     </div>
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Aenean consequat lorem ut felis ullamcorper?</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">How do I pay for a guide?</a>
                             </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                All payment is handled through our secure and encrypted servers. Once payment has taken place, Radventure holds the payment for 48 before distribution to ensure the Radventure happens.
                             </div>
                         </div>
                     </div>
@@ -181,12 +197,12 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Who is Radventure right for?</a>
                             </h4>
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                Radventure is geared toward to strong intermediate to expert skiers and riders who are looking for help navigating in-bounds ski areas. Radventure guides will take clients to spots that they may not have known how to access on their own, with a goal of helping clients make the most of their time on the mountain. Radventure guides are NOT ski instructors, and will not be providing instruction or skiing primarily on main thoroughfares easily navigable by using a trail map.
                             </div>
                         </div>
                     </div>
@@ -194,12 +210,12 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus?</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Who is Radventure?</a>
                             </h4>
                         </div>
                         <div id="collapseFive" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                Radventure is the brainchild of our founders. Read more about them here.<a href="about.html"> About Us</a>
                             </div>
                         </div>
                     </div>
@@ -207,12 +223,12 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Aenean consequat lorem ut felis ullamcorper?</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Who are the guides?</a>
                             </h4>
                         </div>
                         <div id="collapseSix" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                Guides are local mountain navigation experts from the ski/snowboard community who are eager to help you maximize fun and your time on the mountain.  The Radventure guides are members of the community and by using the peer review section, you can get a sense of the types of guides they may be for your future Radvenuture.
                             </div>
                         </div>
                     </div>
@@ -220,12 +236,12 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">How do I know I can trust the guides?</a>
                             </h4>
                         </div>
                         <div id="collapseSeven" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                Safety is our number one priority. All our guides are thoroughly vetted through an online verification process. Our system is set up to provide tools for both guides and guests to thoroughly communicate and we reward our best guides through reviews and term of service. Be sure you read the guides profile and all reviews. Look for guides with a strong reputation and reviews. Lastly, pay and communicate on Radventure. Paying or communicating within the Radventure system enables us to have documented communication to ensure we can protect your information and resolve any issues if they arise.  Our refund policy supports guests adhering to our terms and conditions.
                             </div>
                         </div>
                     </div>
@@ -233,12 +249,12 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus?</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Will Radventure Guides teach me how to ski/snowboard?</a>
                             </h4>
                         </div>
                         <div id="collapseEight" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                No. Radventure Guides are focused on getting you to the areas of the mountain that you will feel most comfortable and help you maximize your time, not teach you how to ski/snowboard.  Mountain resorts have extensive ski-school programs that can be utilized for this type of learning.  Once you are at the strong intermediate level or above, come back and we will help you learn how to navigate the mountain to maximum your fun!
                             </div>
                         </div>
                     </div>
@@ -246,16 +262,33 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">Aenean consequat lorem ut felis ullamcorper?</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">How do reviews work?</a>
                             </h4>
                         </div>
                         <div id="collapseNine" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                All the reviews on Radventure are written by clients and guides from our community, After going on an adventure, clients are strongly encouraged to review their guide. In addition to written reviews, clients can submit a rating for their guide. The number of “rad signs” displayed for a particular guide is an aggregate of all the scores that different clients have given for that guide.
+
+                                Our community relies on honest, regular reviews. We will remove or revise review that violate our review guidelines (forthcoming).
                             </div>
                         </div>
                     </div>
                     <!-- /.panel -->
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">What if I can't get in touch with the guide?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTen" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                If you don’t have a Radventure booked: Most guides respond to requests for more information or booking requests within 24 hours. If a selected guide hasn’t replied within this timeframe, feel free to reach out to other guides in the area.
+
+                                If you have a Radventure booked, try using different messaging systems including phone or text which will be provided upon booking. Ensure you have a clear meeting location for the day of your Radventure. If for some reason the guide does not uphold their end of the booking, Radventure will provide a full refund upon completion of a statement of non-compliance. Our refund policy supports guests if the scheduled Radventure does not occur.
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- /.panel-group -->
             </div>
@@ -266,11 +299,43 @@
         <hr>
 
         <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+        <footer class="navbar container"  style="width:100% ; background:#d3d3d3 ; max-width:inherit">
+            <div class="row text-center center-block">
+                <div class="col-md-4">
+                    <h4>User Information</h4>
+                    <ul class="list-unstyled" style="color:#777777">
+                        <li><a href="">Get Started</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Guides</a></li>
+                        <li><a href="">Locations</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
                 </div>
+                <div class="col-md-4">
+                    <h4>Guide Information</h4>
+                    <ul class="list-unstyled" style="color:#777777">
+                        <li><a href="">Become Guide</a></li>
+                        <li><a href="">Payment Process</a></li>
+                        <li><a href="">How It Works</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Corporate</h4>
+                    <ul class="list-unstyled" style="color:#777777">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="">Legal</a></li>
+                        <li><a href="">Mission</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Expansion</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center">
+                <p>
+                    <br><br>
+                    Copyright &copy; Radventure 2014
+                </p>
             </div>
         </footer>
 

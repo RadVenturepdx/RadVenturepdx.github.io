@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Radventure</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,99 +23,122 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">RADVENTURE</a>
         </div>
-        <!-- /.container -->
-    </nav>
+
+        <div class="collapse navbar-collapse nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="">Mt. Hood</a>
+                        </li>
+                        <li>
+                            <a href="">Mt. Bachelor</a>
+                        </li>
+                        <li>
+                            <a href="">Mt. Whistler</a>
+                        </li>
+                        <li>
+                            <a href="">Tap</a>
+                        </li>
+                        <li>
+                            <a href="">Dat</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="search.html">Quick Search</a>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-md navbar-btn" data-toggle="modal" data-target="#signIn" style="margin-left:15px">
+                        Sign In
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-md navbar-btn" data-toggle="modal" data-target="#signUp" style="margin-left:15px">
+                        Sign Up
+                    </button>
+                </li>
+                <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:99999999999">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="signInModal">Sign In</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="Username">Username/Email</label>
+                                        <input type="email" class="form-control" id="Username" placeholder="radventureit@gmail.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Password">Password</label>
+                                        <input type="password" class="form-control" id="Password" placeholder="Password">
+                                    </div>
+                                    <button type="reset" class="btn btn-default">Reset</button>
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:99999999999">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="signUpModal">Sign Up</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div>
+                                        <a class="btn btn-default" href="registration-user.html" >As a User</a>&nbsp &nbsp If you would like to start finding guides.
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <a class="btn btn-default" href="registration-guide.html">As a Guide</a>&nbsp &nbsp If you want to start guiding people.
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </li> -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 
     <!-- Page Content -->
     <div class="container">
@@ -123,14 +146,8 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">About
-                    <small>Subheading</small>
+                <h1 class="page-header" style="text-align:center">About
                 </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li class="active">About</li>
-                </ol>
             </div>
         </div>
         <!-- /.row -->
@@ -138,13 +155,14 @@
         <!-- Intro Content -->
         <div class="row">
             <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                <img class="img-responsive" src="img/whistler.jpg" alt="">
             </div>
             <div class="col-md-6">
-                <h2>About Modern Business</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>
+                <h2>About Radventure</h2>
+                <p>After parting ways with her “personal adventure guide” (aka break-up with boyfriend), Andrea felt a large void in her ability to really get out and about to experience the outdoors as she had before.  One day, as she was going for a run, she had an A-HA! moment that she was likely not alone in this feeling of frustration.  What if there were others out there with the desire to see, experience and conquer but they just need a local friend to help show them the way?  That was when Radventure was born.
+
+                    We’ve all been there. You’re in a rad new place, but aren’t quite sure where to start. You wish you had a local buddy to give you the inside scoop. You chat with ski techs, bike shop staff, and bartenders, but what you really want is local to show you the sick spots so you can make the most your time outside.
+                </p>
             </div>
         </div>
         <!-- /.row -->
@@ -152,16 +170,16 @@
         <!-- Team Members -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Our Team</h2>
+                <h2 class="page-header" style="text-align:center">Our Team</h2>
             </div>
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <img class="img-responsive" src="img/founders/courtney.png" alt="">
                     <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
+                        <h3>Courtney Gould<br>
+                            <small>Director of Product</small>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
+                        <p>Courtney grew up in Colorado spending her free time exploring the mountains hiking and skiing. Her background working outdoor retail during college paved the way to a further employment and understanding of the outdoor industry and a deep love for the outdoors. Currently living in Portland, Courtney is a MBA student at Portland State, where Radventure was born. Courtney is handling product development with a focus on technical deployment. Outside of time spent on Radventure, Courtney spends the rest of her time racing bikes and cooking from scratch. </p>
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
                             </li>
@@ -175,12 +193,12 @@
             </div>
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <img class="img-responsive" src="img/founders/andrea.png" alt="">
                     <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
+                        <h3>Andrea Bouma<br>
+                            <small>Director of Supply Chain Management</small>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
+                        <p>Andrea has always had a love for the outdoors which only grew after her move out west from Michigan 10 years ago.  Activities that she is passionate about include: snowsports, hiking, running, river adventuring, and generally having a good time out in the sun.   Andrea’s background is in systems development from her past life as a product development food scientist.  After completing a MBA in strategy and entrepreneurship from Portland State University, Andrea teamed up with Courtney and Robyn (two of the raddest members of her cohort) to create Radventure.  A nomad at heart, Andrea is stoked to hit the road and work 1:1 with future Radventure guides to create a robust network of people helping people maximize their time having fun in the great outdoors.</p>
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
                             </li>
@@ -194,12 +212,12 @@
             </div>
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <img class="img-responsive" src="img/founders/robyn.png" alt="">
                     <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
+                        <h3>Robyn Gelfand<br>
+                            <small>Director of Marketing</small>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
+                        <p>Ski patroller, marketer, and ex-ski bum. Robyn’s love for the outdoors took off during a month-long Outward Bound course in the Elk Mountains of Colorado. It was there that she resolved to move to the mountains after college, and also to find a way to enable more people to enjoy the outdoors. After graduating from the University of Virginia, Robyn spent time teaching skiing in Steamboat Springs, CO before getting into marketing for brands including Coors Light, Miller Lite, and adidas. Robyn is currently a member of Mt. Hood Ski Patrol and a MBA student at Portland State University, and is managing marketing for Radventure.</p>
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
                             </li>
@@ -211,65 +229,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
+
 
         <!-- Our Customers -->
         <div class="row">
@@ -300,11 +260,43 @@
         <hr>
 
         <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+        <footer class="navbar container"  style="width:100% ; background:#d3d3d3 ; max-width:inherit">
+            <div class="row text-center center-block">
+                <div class="col-md-4">
+                    <h4>User Information</h4>
+                    <ul class="list-unstyled" style="color:#777777">
+                        <li><a href="">Get Started</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Guides</a></li>
+                        <li><a href="">Locations</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
                 </div>
+                <div class="col-md-4">
+                    <h4>Guide Information</h4>
+                    <ul class="list-unstyled" style="color:#777777">
+                        <li><a href="">Become Guide</a></li>
+                        <li><a href="">Payment Process</a></li>
+                        <li><a href="">How It Works</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Corporate</h4>
+                    <ul class="list-unstyled" style="color:#777777">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="">Legal</a></li>
+                        <li><a href="">Mission</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Expansion</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center">
+                <p>
+                    <br><br>
+                    Copyright &copy; Radventure 2014
+                </p>
             </div>
         </footer>
 
