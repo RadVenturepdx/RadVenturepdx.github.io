@@ -157,24 +157,19 @@
             <!-- Alignment -->
             <div class="col-sm-offset-3 col-sm-6">
                 <!-- Form itself -->
-                <form name="sentMessage" class="well" id="registrationForm"  novalidate>
+                <form name="sentMessage" class="well" id="searchForm"  novalidate>
 
-                    <div class="row">
-                        <div class="control-group col-sm-6">
-                            <div class="controls">
-                                <input type="text" class="form-control"
-                                       placeholder="First Name" id="firstName" />
-                                <p class="help-block"></p>
-                            </div>
-                        </div>
-                        <div class="control-group col-sm-6">
-                            <div class="controls">
-                                <input type="text" class="form-control"
-                                       placeholder="Last Name" id="lastName" />
-                                <p class="help-block"></p>
+                    <div class="control-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" />
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-default">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
+
                     <label class="checkbox-inline" style="padding-left:20px">
                         <input type="checkbox" id="mtHood" value="mtHood"> Mt. Hood
                     </label>
@@ -194,7 +189,6 @@
 
                     <button type="reset" class="btn btn-primary">Reset</button>
                     <button type="submit" class="btn btn-primary">Submit</button>
-
                 </form>
             </div>
         </div>
