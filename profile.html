@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Radventure</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">RADVENTURE</a>
+            </div>
+
+            <div class="collapse navbar-collapse nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <!--  <li>
+                          <a href="">Services</a>
+                      </li> -->
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="">Mt. Hood</a>
+                            </li>
+                            <li>
+                                <a href="">Mt. Bachelor</a>
+                            </li>
+                            <li>
+                                <a href="">Mt. Whistler</a>
+                            </li>
+                            <li>
+                                <a href="">Tap</a>
+                            </li>
+                            <li>
+                                <a href="">Dat</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="search.html">Quick Search</a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-md navbar-btn" data-toggle="modal" data-target="#signIn" style="margin-left:15px">
+                            Login
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-md navbar-btn" data-toggle="modal" data-target="#signUp" style="margin-left:15px">
+                            Sign Up
+                        </button>
+                    </li>
+                    <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:99999999999">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="signInModal">Login</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="Username">Username/Email</label>
+                                            <input type="email" class="form-control" id="Username" placeholder="radventureit@gmail.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Password">Password</label>
+                                            <input type="password" class="form-control" id="Password" placeholder="Password">
+                                        </div>
+                                        <button type="reset" class="btn btn-default">Reset</button>
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:99999999999">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="signUpModal">Sign Up</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div>
+                                            <a class="btn btn-default" href="registration-user.html" >As a User</a>&nbsp &nbsp If you would like to start finding guides.
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <a class="btn btn-default" href="registration-guide.html">As a Guide</a>&nbsp &nbsp If you want to start guiding people.
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Guide Profile
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Guide Profile Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-5">
+                            <img class="img img-circle img-responsive full-width" src="img/guide-n-location/guide1.jpg" style="position:relative; overflow: hidden;" alt="">
+                        </div>
+                        <div class="col-sm-offset-1 col-xs-12 col-sm-6">
+                            <h1><strong>Jane Doe</strong></h1>
+                            <h3><strong>Location: </strong>Mt. Hood</h3>
+                            <h3><strong>Sports: </strong>Snowboarding</h3>
+                            <h3><strong>Pricing: </strong>$200</h3>
+                            <h3><strong>Rating: </strong>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star-o"></span>
+                                <span class="fa fa-star-o"></span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guide Profile Info Tab Navigation -->
+            <ul id="myTab" class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#about-Me" data-toggle="tab"><i class="fa fa-child"></i> About Me</a>
+                </li>
+                <li class=""><a href="#availability" data-toggle="tab"><i class="fa fa-calendar"></i> Availability</a>
+                </li>
+                <li class=""><a href="#reviews" data-toggle="tab"><i class="fa fa-users"></i> Reviews</a>
+                </li>
+                <li class=""><a href="#contact" data-toggle="tab"><i class="fa fa-envelope-o"></i> Contact Guide</a>
+                </li>
+            </ul>
+
+            <!-- Guide Profile Info Tab Content -->
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="about-Me">
+                    <h3>About Me</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                </div>
+                <div class="tab-pane fade" id="availability">
+                    <h3>Availability</h3>
+                    <div id="calendar"></div>
+                    <div class="col-sm-6">
+                        <h3>From: January 1, 2015</h3>
+                        <p>ADD CALENDAR with marked dates</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>To: January 18, 2015</h3>
+                        <p>ADD CALENDAR with marked dates</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <h3>Times: </h3>
+                        <p>Monday 10-5pm</p>
+                        <p>Tuesday 9-6pm</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="reviews">
+                    <h3>Reviews</h3>
+
+                    <!-- Review Row -->
+                    <div class="row">
+                        <div class="col-md-1 text-center">
+                            <p><i class="fa fa-user fa-4x"></i></p>
+                            <p>January 16, 2014</p>
+                        </div>
+                        <div class="col-md-11">
+                            <h3>Review Title1</h3>
+                            <p>by <a href="#">User1</a>
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                    <!-- Review Row -->
+                    <div class="row">
+                        <div class="col-md-1 text-center">
+                            <p><i class="fa fa-user fa-4x"></i></p>
+                            <p>January 17, 2014</p>
+                        </div>
+                        <div class="col-md-11">
+                            <h3>Review Title2</h3>
+                            <p>by <a href="#">User2</a>
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                    <!-- Review Row -->
+                    <div class="row">
+                        <div class="col-md-1 text-center">
+                            <p><i class="fa fa-user fa-4x"></i></p>
+                            <p>January 18, 2014</p>
+                        </div>
+                        <div class="col-md-11">
+                            <h3>Review Title3</h3>
+                            <p>by <a href="#">User3</a>
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <div class="tab-pane fade active in" id="contact">
+                    <h3>Contact Guide</h3>
+                    <div id="contacts">
+                        <div class="row">
+                            <!-- Alignment -->
+                            <div class="col-sm-offset-3 col-sm-6">
+                                <!-- Form itself -->
+                                <form name="sentMessage" class="well" id="contactForm"  novalidate>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <input type="text" class="form-control"
+                                                   placeholder="Full Name" id="name" required
+                                                   data-validation-required-message="Please enter your name" />
+                                            <p class="help-block"></p>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <input type="email" class="form-control" placeholder="Email"
+                                                   id="email" required
+                                                   data-validation-required-message="Please enter your email" />
+                                            <p class="help-block"></p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Calendar Reservation -->
+                                    <div class="control-group">
+                                        <label for="reservationtime">Reservation Times:</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" name="reservation" id="reservationtime" class="form-control" value="07/10/2014 1:00 PM - 07/10/2014 1:30 PM" />
+                                        </div>
+                                        <p class="help-block"></p>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <textarea rows="10" cols="100" class="form-control"
+                                              placeholder="Message" id="message" required
+                                              data-validation-required-message="Please enter your message" minlength="5"
+                                              data-validation-minlength-message="Min 5 characters"
+                                              maxlength="999" style="resize:none"></textarea>
+                                        </div>
+                                    </div>
+                                    <div id="success"> </div> <!-- For success/fail messages -->
+                                    <button type="submit" class="btn btn-primary pull-right">Send</button><br />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+
+        <!-- Footer -->
+        <footer class="navbar container"  style="width:100% ; background:#d3d3d3 ; max-width:inherit">
+            <div class="row text-center center-block">
+                <div class="col-md-4">
+                    <h4>User Information</h4>
+                    <ul class="list-unstyled" style="color:#777777">
+                        <li><a href="">Get Started</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Guides</a></li>
+                        <li><a href="">Locations</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Guide Information</h4>
+                    <ul class="list-unstyled" style="color:#777777">
+                        <li><a href="">Become Guide</a></li>
+                        <li><a href="">Payment Process</a></li>
+                        <li><a href="">How It Works</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Corporate</h4>
+                    <ul class="list-unstyled" style="color:#777777">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="">Legal</a></li>
+                        <li><a href="">Mission</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Expansion</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center">
+                <p>
+                    <br><br>
+                    Copyright &copy; Radventure 2014
+                </p>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- JS FILES -->
+    <!-- Calendar Reservation Time Functionality -->
+    <script rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    <script rel="stylesheet" type="text/css" media="all" src="./css/daterangepicker-bs3.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/moment.js"></script>
+    <script src="./js/daterangepicker.js" type="text/javascript">
+        $(document).ready(function() {
+            $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' });
+        });
+    </script>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
