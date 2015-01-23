@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html dir="ltr" lang="en-US">
 <head>
 
     <meta charset="utf-8">
@@ -27,8 +26,11 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-</head>
+    <!-- Calendar Date Range Picker add-On-->
+    <!-- WARNING: ajax link must be here for calendar to function -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 
+</head>
 <body>
 
     <!-- Navigation -->
@@ -150,129 +152,81 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Guide Profile
+                    Contact Guide
                 </h1>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Guide Profile Section -->
+        <!-- WORKS BY ITSELF GAHH D:<< -->
+        <!-- other files have "jQuery" and "Bootstrap Core JavaScript" section that breaks this code-->
+        <!-- profile page code needs ^ files for the tabs to work -->
+        <!-- if tabs work, this doesn't, so new page for contacting guide -->
         <div class="row">
-            <!-- Main Guide Info: name, location, sport, pricing, ratings -->
             <div class="col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="col-xs-12 col-sm-5">
-                            <img class="img img-circle img-responsive full-width" src="img/guide-n-location/guide1.jpg" style="position:relative; overflow: hidden;" alt="">
-                        </div>
-                        <div class="col-sm-offset-1 col-xs-12 col-sm-6">
-                            <h1><strong>Jane Doe</strong></h1>
-                            <h3><strong>Location: </strong>Mt. Hood</h3>
-                            <h3><strong>Sports: </strong>Snowboarding</h3>
-                            <h3><strong>Pricing: </strong>$200</h3>
-                            <h3><strong>Rating: </strong>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star-o"></span>
-                                <span class="fa fa-star-o"></span>
-                            </h3>
+                <div id="GAHH">
+                    <div class="row">
+                        <!-- Alignment -->
+                        <div class="col-sm-offset-3 col-sm-6">
+                            <!-- Form itself -->
+                            <form name="sentMessage" class="well" id="contactForm"  novalidate>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <input type="text" class="form-control"
+                                               placeholder="Your Full Name" id="name" required
+                                               data-validation-required-message="Please enter your name" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <input type="email" class="form-control" placeholder="Your Email"
+                                               id="email" required
+                                               data-validation-required-message="Please enter your email" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+
+                                <!-- Calendar Reservation -->
+                                <div class="control-group">
+                                    <label for="reservationtime">Reservation Times:</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" name="reservation" id="reservationtime" class="form-control" value="01/22/2015 1:00 PM - 01/22/2015 1:30 PM" />
+                                    </div>
+                                    <p class="help-block"></p>
+                                </div>
+                                <script type="text/javascript">
+                                    $(document).ready(function() {
+                                        $('#reservationtime').daterangepicker({
+                                            timePicker: true,
+                                            timePickerIncrement: 30,
+                                            format: 'MM/DD/YYYY h:mm A'
+                                        }, function(start, end, label) {
+                                            console.log(start.toISOString(), end.toISOString(), label);
+                                        });
+                                    });
+                                </script>
+
+                                <div class="control-group">
+                                    <div class="controls">
+                                                        <textarea rows="10" cols="100" class="form-control"
+                                                                  placeholder="Message" id="message" required
+                                                                  data-validation-required-message="Please enter your message" minlength="5"
+                                                                  data-validation-minlength-message="Min 5 characters"
+                                                                  maxlength="999" style="resize:none"></textarea>
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+
+                                <div id="success"> </div> <!-- For success/fail messages -->
+                                <button type="submit" class="btn btn-primary pull-right">Send</button><br />
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Guide Profile Info Tab Navigation -->
-            <ul id="myTab" class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#about-Me" data-toggle="tab"><i class="fa fa-child"></i> About Me</a>
-                </li>
-                <li class=""><a href="#availability" data-toggle="tab"><i class="fa fa-calendar"></i> Availability</a>
-                </li>
-                <li class=""><a href="#reviews" data-toggle="tab"><i class="fa fa-users"></i> Reviews</a>
-                </li>
-                <li class=""><a href="#contact" data-toggle="tab"><i class="fa fa-envelope-o"></i> Contact Guide</a>
-                </li>
-            </ul>
-
-            <!-- Guide Profile Info Tab Content -->
-            <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade active in col-sm-12" id="about-Me">
-                    <h3>About Me</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                </div>
-                <div class="tab-pane fade col-sm-12" id="availability">
-                    <h3>Availability</h3>
-                    <div id="calendar"></div>
-                    <div class="col-sm-6">
-                        <h3>From: January 1, 2015</h3>
-                    </div>
-                    <div class="col-sm-6">
-                        <h3>To: January 18, 2015</h3>
-                    </div>
-                    <div class="col-sm-12">
-                        <h3>Times: </h3>
-                        <h4>Monday 10-5pm</h4>
-                        <h4>Tuesday 9-6pm</h4>
-                    </div>
-                </div>
-                <div class="tab-pane fade col-sm-12" id="reviews">
-                    <h3>Reviews</h3>
-
-                    <!-- Review Row -->
-                    <div class="row">
-                        <div class="col-md-1 text-center">
-                            <p><i class="fa fa-user fa-4x"></i></p>
-                            <p>January 16, 2014</p>
-                        </div>
-                        <div class="col-md-11">
-                            <h3>Review Title1</h3>
-                            <p>by <a href="#">User1</a>
-                            </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                    </div>
-                    <!-- /.row -->
-
-                    <!-- Review Row -->
-                    <div class="row">
-                        <div class="col-md-1 text-center">
-                            <p><i class="fa fa-user fa-4x"></i></p>
-                            <p>January 17, 2014</p>
-                        </div>
-                        <div class="col-md-11">
-                            <h3>Review Title2</h3>
-                            <p>by <a href="#">User2</a>
-                            </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                    </div>
-                    <!-- /.row -->
-
-                    <!-- Review Row -->
-                    <div class="row">
-                        <div class="col-md-1 text-center">
-                            <p><i class="fa fa-user fa-4x"></i></p>
-                            <p>January 18, 2014</p>
-                        </div>
-                        <div class="col-md-11">
-                            <h3>Review Title3</h3>
-                            <p>by <a href="#">User3</a>
-                            </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        </div>
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <div class="tab-pane fade col-sm-12" id="contact">
-                    <div class="text-center">
-                        <a href="contact-guide.html"><h3>Contact Guide</h3></a>
-                    </div>
-                </div>
-            </div>
-
         </div>
-        <!-- /.row -->
+        <!-- ./row -->
 
         <!-- Footer -->
         <footer class="navbar container"  style="width:100% ; background:#d3d3d3 ; max-width:inherit">
@@ -316,14 +270,15 @@
         </footer>
 
     </div>
-    <!-- /.container -->
+    <!-- container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- JS FILES -->
+    <link rel="stylesheet" type="text/css" media="all" href="./css/daterangepicker-bs3.css" />
+    <script type="text/javascript" src="./js/moment.js"></script>
+    <script type="text/javascript" src="./js/daterangepicker.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!--WARNING: Do not add "jQuery" and "Bootstrap Core JavaScript" like in other pages, or else calendar code will break -->
+
 
 </body>
-
 </html>
