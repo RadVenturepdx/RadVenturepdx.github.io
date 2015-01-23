@@ -152,22 +152,23 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Contact Guide
+                    Booking Request
                 </h1>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- WORKS BY ITSELF GAHH D:<< -->
+        <!-- Contact Guide -->
         <!-- other files have "jQuery" and "Bootstrap Core JavaScript" section that breaks tabs code in profile.html-->
         <div class="row">
             <div class="col-lg-12">
-                <div id="GAHH">
+                <div id="contactGuide">
                     <div class="row">
                         <!-- Alignment -->
                         <div class="col-sm-offset-3 col-sm-6">
                             <!-- Form itself -->
                             <form name="sentMessage" class="well" id="contactForm"  novalidate>
+                                <legend>To: Jane Doe</legend>
                                 <div class="control-group">
                                     <div class="controls">
                                         <input type="text" class="form-control"
@@ -207,11 +208,23 @@
 
                                 <div class="control-group">
                                     <div class="controls">
-                                                        <textarea rows="10" cols="100" class="form-control"
-                                                                  placeholder="Message" id="message" required
-                                                                  data-validation-required-message="Please enter your message" minlength="5"
-                                                                  data-validation-minlength-message="Min 5 characters"
-                                                                  maxlength="999" style="resize:none"></textarea>
+                                        <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                                        <input type="number" class="form-control"
+                                               placeholder="Number of People in Radventure Party" id="party" required
+                                               min="1"
+                                               data-validation-required-message="Please enter number of people in Radventure party" />
+                                        </div>
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <textarea rows="10" cols="100" class="form-control"
+                                                  placeholder="Message to Guide" id="message" required
+                                                  data-validation-required-message="Please enter your message" minlength="0"
+                                                  data-validation-minlength-message="Min 0 characters"
+                                                  maxlength="999" style="resize:none"></textarea>
                                         <p class="help-block"></p>
                                     </div>
                                 </div>
