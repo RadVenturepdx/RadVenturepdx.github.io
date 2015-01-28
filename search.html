@@ -159,16 +159,14 @@
                 <!-- Form itself -->
                 <form name="sentMessage" class="well" id="searchForm"  novalidate>
 
+                    <h3>Name:</h3>
                     <div class="control-group">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search" />
-                            <div class="input-group-btn">
-                                <button type="submit" class="btn btn-default">
-                                    <i class="glyphicon glyphicon-search"></i>
-                                </button>
-                            </div>
-                        </div>
+                        <input type="text" class="form-control" id="firstname" placeholder="First Name" />
+                        <br>
+                        <input type="text" class="form-control" id="lastname" placeholder="Last Name" />
                     </div>
+
+                    <h3>Locations:</h3>
 
                     <label class="checkbox-inline" style="padding-left:20px">
                         <input type="checkbox" id="mtHood" value="mtHood"> Mt. Hood
@@ -179,12 +177,32 @@
                     <label class="checkbox-inline" style="padding-left:20px">
                         <input type="checkbox" id="mtWhistler" value="mtWhistler"> Mt. Whistler
                     </label>
+
+                    <h3>Sport:</h3>
+
                     <label class="checkbox-inline" style="padding-left:20px">
-                        <input type="checkbox" id="tap" value="mtWhistler"> Dat
+                        <input type="checkbox" id="skiing" value="skiing"> Skiing
                     </label>
                     <label class="checkbox-inline" style="padding-left:20px">
-                        <input type="checkbox" id="dat" value="mtWhistler"> Tap
+                        <input type="checkbox" id="snowboarding" value="snowboarding"> Snowboarding
                     </label>
+
+                    <h3>Rating:</h3>
+                    <label class="checkbox-inline" style="padding-left:20px">
+                        <input type="checkbox" id="12rating" value="12rating"> 1-2
+                    </label>
+                    <label class="checkbox-inline" style="padding-left:20px">
+                        <input type="checkbox" id="23rating" value="23rating"> 2-3
+                    </label>
+                    <label class="checkbox-inline" style="padding-left:20px">
+                        <input type="checkbox" id="34" value="34rating"> 3-4
+                    </label>
+                    <label class="checkbox-inline" style="padding-left:20px">
+                        <input type="checkbox" id="45rating" value="45rating"> 4-5
+                    </label>
+
+
+
                     <br><br>
 
                     <button type="reset" class="btn btn-primary">Reset</button>
