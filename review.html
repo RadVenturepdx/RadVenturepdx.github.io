@@ -169,12 +169,24 @@
                         <div class="row">
                             <div class="control-group">
                                 <div class="controls">
-                                    <p class="col-sm-3 help-block control-label">Star Ratings .... ADDDDDDDDDDDDD</p>
+                                    <p class="col-sm-2 help-block control-label">Rating:</p>
+                                    <div class="col-xs-3">
+                                        <select class="form-control col-sm-3" name="rating" id="rating">
+                                            <option>rate</option>
+                                            <option value="0">0 </option>
+                                            <option value="1">1 </option>
+                                            <option value="2">2 </option>
+                                            <option value="3">3 </option>
+                                            <option value="4">4 </option>
+                                            <option value="5">5 </option>
+                                        </select>
+                                    </div>
+                                    <p class="col-sm-3 help-block control-label">out of 5</p>
                                 </div>
                             </div>
-
                         </div>
                         <div class="control-group">
+                            <p class="help-block"></p>
                             <div class="controls">
                                         <textarea rows="10" cols="100" class="form-control"
                                                   placeholder="Write a Review" id="message" required
