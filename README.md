@@ -27,5 +27,5 @@ Copyright 2014 Iron Summit Media Strategies, LLC. Code released under the [Apach
 
 ## Credits
 
-The calendar on the booking page uses code from https://github.com/dangrossman/bootstrap-daterangepicker written by Dan Grossman
-The phone number entry on the user registration and update profile pages uses code from https://github.com/CoBase/cobase/tree/master/web/lib/bootstrap-formhelpers written by Vincent Lamanna
+*The calendar on the booking page uses code from https://github.com/dangrossman/bootstrap-daterangepicker written by Dan Grossman
+*The phone number entry on the user registration and update profile pages uses code from https://github.com/CoBase/cobase/tree/master/web/lib/bootstrap-formhelpers written by Vincent Lamanna
