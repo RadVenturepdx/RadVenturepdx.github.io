@@ -24,3 +24,8 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 ## Copyright and License
 
 Copyright 2014 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-modern-business/blob/gh-pages/LICENSE) license.
+
+## Credits
+
+The calendar on the booking page uses code from https://github.com/dangrossman/bootstrap-daterangepicker written by Dan Grossman
+The phone number entry on the user registration and update profile pages uses code from https://github.com/CoBase/cobase/tree/master/web/lib/bootstrap-formhelpers written by Vincent Lamanna
